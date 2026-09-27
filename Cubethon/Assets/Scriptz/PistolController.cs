@@ -8,6 +8,8 @@ namespace DecoratorPattern
         {
             IWeapon pistol = new Pistol();
             pistol = new SilencerDecorator(pistol);
+            pistol = new ScopeDecorator(pistol);
+            pistol = new LaserDecorator(pistol);
             pistol.Shoot();
         }
 
