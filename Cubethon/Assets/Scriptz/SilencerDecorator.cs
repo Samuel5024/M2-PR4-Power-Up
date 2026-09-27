@@ -9,6 +9,7 @@ namespace DecoratorPattern
         public override void Shoot()
         {
             base.Shoot();
+            Debug.Log("The weapon has a silencer.");
         }
     }
 }
