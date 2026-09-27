@@ -26,7 +26,7 @@ namespace DecoratorPattern
                 $"{weaponData.effectiveRange} effective range.");
 
             //AudioPlayer.Instance.Play(weaponData.shootingSound);
-            GameObject.Instantiate(weaponData.bulletPrefab, weaponData.weaponTransform.position, weaponData.weaponTransform.rotation);
+            //GameObject.Instantiate(weaponData.bulletPrefab, weaponData.weaponTransform.position, weaponData.weaponTransform.rotation);
         }
     }
 
