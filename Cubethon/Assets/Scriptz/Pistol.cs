@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DecoratorPattern
 {
-    public class Pistol
+    public class Pistol : IWeapon
     {
         public void Shoot()
         {
