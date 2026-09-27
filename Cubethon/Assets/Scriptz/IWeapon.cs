@@ -20,7 +20,7 @@ namespace DecoratorPattern
         public float effectiveRange;
         public float zoomFOV;
         public GameObject bulletPrefab;
-        public AudioClip shootingSound;
+        //public AudioClip shootingSound;
 
         public WeaponData(Transform _weaponTransform)
         {

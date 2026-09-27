@@ -4,18 +4,20 @@ namespace DecoratorPattern
 {
     public class PistolController : MonoBehaviour
     {
+        [SerializeField] private PistolUpgrader pistolUpgrader;
+
+        private IWeapon weapon;
         private void Start()
         {
-            IWeapon pistol = new Pistol();
-            pistol = new SilencerDecorator(pistol);
-            pistol = new ScopeDecorator(pistol);
-            pistol = new LaserDecorator(pistol);
-            pistol.Shoot();
+            weapon = pistolUpgrader.weapon;
         }
 
-        void Update()
+        private void Update()
         {
-
+            if(Input.GetMouseButtonDown(0))
+            {
+                weapon.Shoot();
+            }
         }
     }
 }
